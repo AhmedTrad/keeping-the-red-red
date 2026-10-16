@@ -55,7 +55,7 @@ Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
 ## Citing
 
-The concept DOI 10.5281/zenodo.23413712 always resolves to the latest release; each release also has its own DOI (v1.0.1: 10.5281/zenodo.23413713).
+The paper: https://doi.org/10.5281/zenodo.23414471. The tools and data: the concept DOI 10.5281/zenodo.23413712 always resolves to the latest release; each release also has its own DOI (v1.0.1: 10.5281/zenodo.23413713).
 
 ```
 @misc{trad2026redred,
@@ -63,6 +63,7 @@ The concept DOI 10.5281/zenodo.23413712 always resolves to the latest release; e
   title  = {Keeping the Red Red: Colour Loss, Perceptual Quality Targets and Deployment
             Constraints in a Self-Hosted Storefront Image Pipeline},
   year   = {2026},
+  doi    = {10.5281/zenodo.23414471},
   note   = {Preprint. Tools and data: \url{https://doi.org/10.5281/zenodo.23413712}}
 }
 ```

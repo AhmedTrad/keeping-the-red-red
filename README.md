@@ -1,5 +1,7 @@
 # Keeping the Red Red
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23413712.svg)](https://doi.org/10.5281/zenodo.23413712)
+
 Colour loss, perceptual quality targets and deployment constraints in a
 self-hosted storefront image pipeline. This repository holds the paper's
 sources, the measurement tools it describes, the crawler of its multi-store
@@ -53,12 +55,14 @@ Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/).
 
 ## Citing
 
+The concept DOI 10.5281/zenodo.23413712 always resolves to the latest release; each release also has its own DOI (v1.0.1: 10.5281/zenodo.23413713).
+
 ```
 @misc{trad2026redred,
   author = {Ahmed Trad},
   title  = {Keeping the Red Red: Colour Loss, Perceptual Quality Targets and Deployment
             Constraints in a Self-Hosted Storefront Image Pipeline},
   year   = {2026},
-  note   = {Preprint}
+  note   = {Preprint. Tools and data: \url{https://doi.org/10.5281/zenodo.23413712}}
 }
 ```

@@ -10,6 +10,14 @@ authors:
 version: 1.0.1
 date-released: 2026-10-16
 repository-code: https://github.com/AhmedTrad/keeping-the-red-red
+doi: 10.5281/zenodo.23413712
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23413712
+    description: Concept DOI, resolves to the latest release
+  - type: doi
+    value: 10.5281/zenodo.23413713
+    description: Version DOI of v1.0.1
 license: MIT
 keywords:
   - ICC profiles

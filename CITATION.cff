@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it as below."
+type: software
+title: "Keeping the Red Red: measurement tools, crawler, calibration script and data"
+authors:
+  - family-names: Trad
+    given-names: Ahmed
+    email: tradahmed1995@gmail.com
+    affiliation: Independent researcher
+version: 1.0.0
+date-released: 2026-10-16
+repository-code: https://github.com/AhmedTrad/keeping-the-red-red
+license: MIT
+keywords:
+  - ICC profiles
+  - colour management
+  - Display P3
+  - image optimisation
+  - WebP
+  - WooCommerce
+  - measurement study
+abstract: >-
+  Paper sources, a dependency-free PHP library that reads the embedded ICC
+  profile of a JPEG, PNG or WebP file and measures the colour shift when the
+  profile is ignored (ΔE76 in CIELAB), a polite crawler that measures product
+  images over live stores through their public catalogues, a WebP quality
+  calibration script, a synthetic Display P3 profile for validation, and the
+  data of the October 2026 crawl of 26 stores.
+preferred-citation:
+  type: generic
+  title: "Keeping the Red Red: Colour Loss, Perceptual Quality Targets and Deployment Constraints in a Self-Hosted Storefront Image Pipeline"
+  authors:
+    - family-names: Trad
+      given-names: Ahmed
+      affiliation: Independent researcher
+  year: 2026
+  notes: Preprint

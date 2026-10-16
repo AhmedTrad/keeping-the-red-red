@@ -1,0 +1,5 @@
+# One store address per line; # starts a comment. An address without a scheme gets https://.
+# Example: a WordPress site on the author's development machine.
+http://localhost/wordpress
+# The addresses of the October 2026 run are in data/seeds-live.txt (the 68 that resolved
+# from a hand-made list of 217; data/liveness.txt records the check).

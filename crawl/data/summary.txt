@@ -1,0 +1,70 @@
+stores: 68 | with images: 26 | images: 2419
+
+store outcomes: {'images': 26, 'no-catalogue': 39, 'robots': 3}
+
+store                            platform        n  profiles                                 served                        <900  medKB
+aynadesign.com                   shopify-cdn    77  srgb:75,none:2                           cdn-processed:77                 2    189
+mihijab.com                      shopify-cdn   100  srgb:100                                 cdn-processed:100               41     46
+velascarves.com                  shopify-cdn   100  srgb:97,none:3                           cdn-processed:100                5    359
+abrarhijabs.com                  shopify-cdn   100  srgb:100                                 cdn-processed:100                0    219
+balkiss.com                      self-hosted   100  none:100                                 upload:100                     100    131
+hijabstore.es                    self-hosted     8  none:5,display-p3:3                      upload:8                         2    182
+jennah-boutique.com              shopify-cdn   100  srgb:100                                 cdn-processed:100                0    112
+eynaaparis.fr                    shopify-cdn   100  srgb:100                                 cdn-processed:100                0     79
+www.chicandmodesty.com           shopify-cdn   100  srgb:100                                 cdn-processed:100                0     62
+bantik.co                        shopify-cdn   100  srgb:100                                 cdn-processed:100                1    463
+ayeshaa-collection.com           shopify-cdn    79  srgb:79                                  cdn-processed:79                 0    233
+www.aabcollection.com            shopify-cdn   100  srgb:99,none:1                           cdn-processed:100                0    254
+arabesque-elegance.co.uk         shopify-cdn   100  srgb:90,display-p3:10                    cdn-processed:100               14    117
+www.inayah.com                   shopify-cdn   100  srgb:99,none:1                           cdn-processed:100                0    277
+hijabboutique.org                shopify-cdn   100  srgb:100                                 cdn-processed:100               36    118
+bokitta.co.uk                    shopify-cdn    99  srgb:99                                  cdn-processed:99                95     61
+www.hayahalmuslimah.com          shopify-cdn    90  srgb:90                                  cdn-processed:90                 1     48
+shukr.co.uk                      shopify-cdn   100  srgb:100                                 cdn-processed:100               64     47
+www.mybatua.com                  shopify-cdn   100  none:83,srgb:17                          cdn-processed:100               14     87
+niswafashion.com                 shopify-cdn   100  srgb:100                                 cdn-processed:100               40    150
+www.alhannah.com                 self-hosted   100  none:72,srgb:28                          upload:100                       4    207
+oriental-style.de                shopify-cdn   100  none:73,srgb:27                          cdn-processed:100                0    103
+islamitischekleding.nl           shopify-cdn    66  srgb:66                                  cdn-processed:66                 1    208
+abayashop.nl                     shopify-cdn   100  srgb:100                                 cdn-processed:100               30    134
+toucheprive.com                  shopify-cdn   100  srgb:100                                 cdn-processed:100                0    115
+freshscarfs.com                  shopify-cdn   100  srgb:93,none:7                           cdn-processed:100                0    350
+
+by platform:
+  self-hosted  stores   3 images   208 | none 177 (85.1%), srgb 28 (13.5%), display-p3 3 (1.4%) | width median 752, <900px 51.0%
+  shopify-cdn  stores  23 images  2211 | srgb 2031 (91.9%), none 170 (7.7%), display-p3 10 (0.5%) | width median 1536, <900px 15.6%
+
+files that are the upload itself: 208 from 3 stores
+  none             177 (85.1%)
+  srgb              28 (13.5%)
+  display-p3         3 (1.4%)
+  wide-gamut uploads: 3 = 1.4% of uploads, in 1 stores
+
+colour shift of non-sRGB images (n=13): mean dE median 1.6, p90 3.6, max 6.3; share of pixels past 2.3: median 12%, images with >50% of pixels past 2.3: 5
+
+by country (TLD), stores with images:
+  .com    stores  16 images  1546 uploads   200 wide-gamut   0
+  .uk     stores   3 images   299 uploads     0 wide-gamut  10
+  .nl     stores   2 images   166 uploads     0 wide-gamut   0
+  .fr     stores   1 images   100 uploads     0 wide-gamut   0
+  .co     stores   1 images   100 uploads     0 wide-gamut   0
+  .org    stores   1 images   100 uploads     0 wide-gamut   0
+  .de     stores   1 images   100 uploads     0 wide-gamut   0
+  .es     stores   1 images     8 uploads     8 wide-gamut   3
+
+what the host's resized copy does with a wide-gamut upload (post-pass on the thumbnails):
+  hijabstore.es                    {'display-p3': 3}  → keeps the profile on resize (browsers honour it)
+  arabesque-elegance.co.uk         {'srgb': 10}  → converts resized copies to sRGB (colour-managed)
+
+image width (full size as served): median 1418, p10 767, p90 3024; <600 px 2.0%, <900 px 18.6%, <1200 px 38.3%
+
+pixel check of Shopify's resized copies (cdn-convert-check.php, 15 October 2026, arabesque-elegance.co.uk):
+IMG-4199.jpg  original DCI-P3 D65 Gamut with sRGB Transfer, CDN copy tagged c2ci (compact sRGB), 300x400
+  dE(CDN copy, intended colour) = 1.3   dE(CDN copy, stripped original) = 5.5   dE(intended, stripped) = 5.4  -> converted
+IMG-4204.jpg  original DCI-P3 D65 Gamut with sRGB Transfer, CDN copy tagged c2ci (compact sRGB), 300x400
+  dE(CDN copy, intended colour) = 1.2   dE(CDN copy, stripped original) = 3.0   dE(intended, stripped) = 2.7  -> converted
+
+served width of the full-size image, share at or below (26 stores):
+  Shopify CDN (2,211): 600 2.3% | 900 15.6% | 1200 33.7% | 1600 51.3% | 2000 71.6% | 3000 87.0% | 4000 96.5%
+  self-hosted (208):   700 0.5% | 800 50.5% | 900 51.0% | 1000 55.3% | 1200 99.5% | 1400 100%
+  per store, share below 900 px: median 0.03; three stores above 0.5
